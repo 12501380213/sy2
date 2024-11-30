@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <ImageView
+        android:id="@+id/imageViewSpaceStations"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginBottom="16dp"
+        android:src="@drawable/space_station_icon" />
+
+    <ImageView
+        android:id="@+id/imageViewFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="120dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="176dp"
+        android:src="@drawable/rocket_icon"
+        app:layout_constraintStart_toEndOf="@id/imageViewSpaceStations"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <ImageView
+        android:id="@+id/imageViewRovers"
+        android:layout_width="122dp"
+        android:layout_height="116dp"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="16dp"
+        android:layout_marginRight="10dp"
+        android:src="@drawable/rover_icon"
+        app:layout_constraintStart_toEndOf="@id/imageViewFlights"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:id="@+id/textViewFlights"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Space Stations"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="120dp"
+        android:layout_marginLeft="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="120dp"
+        app:layout_constraintStart_toEndOf="@id/imageViewSpaceStations"
+        android:text="Flights" />
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="120dp"
+        android:layout_marginRight="53dp"
+        android:text="Rovers"
+        app:layout_constraintStart_toEndOf="@id/imageViewSpaceStations" />
+
+    <TextView
+        android:id="@+id/TextView04"
+        android:layout_width="86dp"
+        android:layout_height="87dp"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="-44dp"
+        android:layout_toLeftOf="@+id/TextView05"
+        android:background="#0f0"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="DCA"
+        android:textColor="#fff"></TextView>
+
+
+    <ImageView
+        android:id="@+id/TextView05"
+        android:layout_width="127dp"
+        android:layout_height="131dp"
+        android:layout_centerInParent="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginBottom="10dp"
+        android:gravity="center"
+        android:padding="25dp"
+        android:src="@drawable/double_arrows"
+        android:text="BLUE"></ImageView>
+
+
+    <TextView
+        android:id="@+id/TextView06"
+        android:layout_width="103dp"
+        android:layout_height="90dp"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="-48dp"
+        android:layout_toRightOf="@+id/TextView05"
+        android:background="#0f0"
+        android:gravity="center"
+        android:padding="25dp"
+        android:text="MARS"
+        android:textColor="#fff"></TextView>
+
+
+
+    <ToggleButton
+        android:id="@+id/toggleButtonOneWay"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="420dp"
+        android:layout_marginStart="16dp"
+        android:textOff="One Way"
+        android:textOn="One Way"
+        app:layout_constraintStart_toStartOf="parent"
+        android:background="#ffa500"
+        android:textColor="#fff"/>
+
+    <TextView
+        android:id="@+id/textViewTraveller"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/toggleButtonOneWay"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="32dp"
+        android:background="#ffa500"
+        android:text="1 Traveller"
+        android:textColor="#fff"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/toggleButtonOneWay" />
+
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="38dp"
+        android:layout_marginStart="100dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="176dp"
+        android:src="@drawable/rocket_icon" />
+
+    <ImageView
+        android:layout_width="121dp"
+        android:layout_height="101dp"
+        android:layout_marginStart="150dp"
+        android:layout_marginTop="550dp"
+        android:layout_marginRight="176dp"
+        android:src="@drawable/galaxy" />
+
+    <TextView
+        android:text="DEPART"
+        android:layout_height="wrap_content"
+        android:background="#0f0"
+        android:gravity="center"
+        android:textColor="#000"
+        android:id="@+id/DEPART"
+        android:layout_alignParentBottom="true"
+        android:layout_width="fill_parent"
+        android:padding="25dp"></TextView>
+
+</RelativeLayout>
